@@ -1,0 +1,204 @@
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a,
+hr {
+    color: inherit;
+}
+
+*,
+ul {
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: unset;
+}
+
+*,
+body,
+h1,
+h2,
+hr,
+p,
+ul {
+    margin: 0;
+}
+
+h1,
+h2 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img,
+svg {
+    vertical-align: bottom;
+}
+
+button {
+    -webkit-appearance: none;
+    appearance: none;
+    vertical-align: middle;
+    color: inherit;
+    font: inherit;
+    background: 0 0;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    text-align: inherit;
+    text-transform: inherit;
+}
+
+button,
+a {
+    cursor: pointer;
+}
+
+button:disabled, 
+a:disabled {
+    cursor: default;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 0;
+}
+
+:root {
+    --Dark-black: rgb(21, 21, 21);
+    --Green: rgb(78, 225, 160);
+    --light-black: rgb(36, 36, 36);
+    --grey: rgb(217, 217, 217);
+    --white: rgb(255, 255, 255);
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url(./assets/fonts/static/SpaceGrotesk-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url(./assets/fonts/static/SpaceGrotesk-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    font-family: 'SpaceGrotesk', sans-serif;
+    font-weight: 500;
+    color: var(--grey);
+    min-height: 100vh;
+    background-color: var(--Dark-black);
+    margin: 20px 30px 60px 30px;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    font-family: 'SpaceGrotesk', serif;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.hero_heading,
+.project_heading,
+.contact_heading {
+    font-size: 44px;
+    line-height: 49px;
+    letter-spacing: -1.5px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+._link,
+.view_link,
+#message_button {
+    color: var(--white);
+}
+
+header {
+    width: 100%;
+}
+
+.header_my-name {
+    text-align: center;
+}
+
+#menu_list {
+    display: flex;
+    justify-content: center;
+    gap: 8%;
+    align-items: center;
+    margin: 25px;
+}
+
+.main_hero-container {
+    position: relative;
+    margin-top: 120px;
+}
+
+.main_hero-container img {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero_profile-image {
+    width: 205px;
+    padding-top: 140px;
+}
+
+.header_link > img,
+.social_link img {
+    width: 23px;
+    height: 23px;
+    aspect-ratio: 1 / 1;
+}
+
+.hero_heading {
+    padding-top: 260px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.hero_heading + p {
+    text-align: center;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#name_link::after,
+._link::after,
+.view_link::after,
+#message_button::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    /* transform: ; */
+    background-color: var(--Green);
+}
