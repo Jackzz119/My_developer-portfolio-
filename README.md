@@ -6,7 +6,7 @@
 Technique used:
 1. Semantics HTML
 2. Css
-3. Responsive, Media query
+3. Mobile first Responsive / Media query
 4. Javascript
 5. Accessiblilty
 6. Figma
